@@ -303,16 +303,16 @@ print(mydata)
     ## # A tibble: 10,504 x 9
     ##    Symbol tradingVolume weight~1 openP~2 close~3 highe~4 lowes~5 timeS~6 trans~7
     ##    <chr>          <dbl>    <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <int>
-    ##  1 TPLC          11400     35.3     35.2    35.1   35.5     35.1 1.63e12      97
-    ##  2 GRIN         179290     14.6     14.4    14.5   14.9     14.3 1.63e12    1581
-    ##  3 CTSH        1893402     75.7     75.2    75.4   76.4     75.2 1.63e12   23404
-    ##  4 USAK         123866     15.7     15.6    15.8   15.9     15.5 1.63e12     754
-    ##  5 GECC           7568.    20.3     20.5    20.3   20.5     20.2 1.63e12     450
-    ##  6 KTEC           4723     19.8     19.8    19.5   19.8     19.5 1.63e12      32
-    ##  7 STAF          16694     18.3     18.5    17.7   18.9     17.5 1.63e12     714
-    ##  8 BHV            4823     18.0     18.8    17.1   18.8     17.1 1.63e12      37
-    ##  9 PFN          116857     10.0     10.0    10.0   10.1     10   1.63e12     416
-    ## 10 RCON         565232      2.46     2.5     2.4    2.53     2.4 1.63e12    2548
+    ##  1 TPLC           11400   35.3     35.2   35.1     35.5   35.1   1.63e12      97
+    ##  2 SIXH             320   31.1     30.6   30.2     30.6   30.2   1.63e12      15
+    ##  3 GLAQW          42700    0.599    0.69   0.648    0.69   0.580 1.63e12      42
+    ##  4 DOLE          160975   15.2     15.0   15.3     15.4   15.0   1.63e12    1989
+    ##  5 USAK          123866   15.7     15.6   15.8     15.9   15.5   1.63e12     754
+    ##  6 GRIN          179290   14.6     14.4   14.5     14.9   14.3   1.63e12    1581
+    ##  7 NXTP         8487404    2.43     2.21   2.42     2.73   2.13  1.63e12   20052
+    ##  8 STAF           16694   18.3     18.5   17.7     18.9   17.5   1.63e12     714
+    ##  9 RETA          112889   98.9     99.0   98.7    101.    97.8   1.63e12    3070
+    ## 10 CTSH         1893402   75.7     75.2   75.4     76.4   75.2   1.63e12   23404
     ## # ... with 10,494 more rows, and abbreviated variable names
     ## #   1: weightedVolPrice, 2: openPrice, 3: closePrice, 4: highestPrice,
     ## #   5: lowestPrice, 6: timeStamp, 7: transactions
@@ -347,28 +347,28 @@ print(mydata, width = 100)
     ## # A tibble: 10,504 x 12
     ##    Symbol tradingVolume weightedVolPrice openPrice closePrice highestPrice
     ##    <chr>          <dbl>            <dbl>     <dbl>      <dbl>        <dbl>
-    ##  1 TPLC          11400             35.3       35.2       35.1        35.5 
-    ##  2 GRIN         179290             14.6       14.4       14.5        14.9 
-    ##  3 CTSH        1893402             75.7       75.2       75.4        76.4 
-    ##  4 USAK         123866             15.7       15.6       15.8        15.9 
-    ##  5 GECC           7568.            20.3       20.5       20.3        20.5 
-    ##  6 KTEC           4723             19.8       19.8       19.5        19.8 
-    ##  7 STAF          16694             18.3       18.5       17.7        18.9 
-    ##  8 BHV            4823             18.0       18.8       17.1        18.8 
-    ##  9 PFN          116857             10.0       10.0       10.0        10.1 
-    ## 10 RCON         565232              2.46       2.5        2.4         2.53
+    ##  1 TPLC           11400           35.3       35.2      35.1          35.5 
+    ##  2 SIXH             320           31.1       30.6      30.2          30.6 
+    ##  3 GLAQW          42700            0.599      0.69      0.648         0.69
+    ##  4 DOLE          160975           15.2       15.0      15.3          15.4 
+    ##  5 USAK          123866           15.7       15.6      15.8          15.9 
+    ##  6 GRIN          179290           14.6       14.4      14.5          14.9 
+    ##  7 NXTP         8487404            2.43       2.21      2.42          2.73
+    ##  8 STAF           16694           18.3       18.5      17.7          18.9 
+    ##  9 RETA          112889           98.9       99.0      98.7         101.  
+    ## 10 CTSH         1893402           75.7       75.2      75.4          76.4 
     ##    lowestPrice     timeStamp transactions avgPrice transType priceLevel
     ##          <dbl>         <dbl>        <int>    <dbl> <fct>     <fct>     
-    ##  1        35.1 1633982400000           97    35.3  low       cheap     
-    ##  2        14.3 1633982400000         1581    14.6  low       cheap     
-    ##  3        75.2 1633982400000        23404    75.8  low       cheap     
-    ##  4        15.5 1633982400000          754    15.7  low       cheap     
-    ##  5        20.2 1633982400000          450    20.3  low       cheap     
-    ##  6        19.5 1633982400000           32    19.7  low       cheap     
-    ##  7        17.5 1633982400000          714    18.2  low       cheap     
-    ##  8        17.1 1633982400000           37    17.9  low       cheap     
-    ##  9        10   1633982400000          416    10.0  low       cheap     
-    ## 10         2.4 1633982400000         2548     2.46 low       cheap     
+    ##  1      35.1   1633982400000           97   35.3   low       cheap     
+    ##  2      30.2   1633982400000           15   30.4   low       cheap     
+    ##  3       0.580 1633982400000           42    0.635 low       cheap     
+    ##  4      15.0   1633982400000         1989   15.2   low       cheap     
+    ##  5      15.5   1633982400000          754   15.7   low       cheap     
+    ##  6      14.3   1633982400000         1581   14.6   low       cheap     
+    ##  7       2.13  1633982400000        20052    2.43  low       cheap     
+    ##  8      17.5   1633982400000          714   18.2   low       cheap     
+    ##  9      97.8   1633982400000         3070   99.3   low       cheap     
+    ## 10      75.2   1633982400000        23404   75.8   low       cheap     
     ## # ... with 10,494 more rows
 
 -   **Contingency tables**
@@ -488,7 +488,7 @@ g + geom_point(aes(fill = avgPrice), color = 'red') +
       labs(title = 'Volume vs Number of transactions')
 ```
 
-![](ST558-Project2/README.md/unnamed-chunk-15-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 -   **Graphical summary of different type of transactions, categorized
     by the level price of the stocks**
@@ -501,7 +501,7 @@ g + geom_bar(aes(fill = priceLevel), position = 'dodge')+
   facet_wrap (~priceLevel, labeller = label_both)
 ```
 
-![](ST558-Project2/README.md/unnamed-chunk-16-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 The above plot is a bar plot, used to summarize categorical variables.
 We summarized the type of AAPL stock transactions ranging from low
@@ -524,7 +524,7 @@ g + geom_bar(aes(fill = priceLevel ), position = 'dodge')+
   coord_flip()
 ```
 
-![](ST558-Project2/README.md/unnamed-chunk-17-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 -   **Boxplot of the transaction variable for each level of th e
     transaction type**
@@ -544,7 +544,7 @@ g + geom_boxplot()+
   labs(title = 'Boxplot for the number of transactions')
 ```
 
-![](ST558-Project2/README.md/unnamed-chunk-18-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
 -   **Histogram of the number of AAPL transactions**
 
@@ -554,7 +554,7 @@ g + geom_histogram(bins = 20, fill = 'blue', color = 5)+
    labs(title = 'Histogram of the number of transactions')
 ```
 
-![](ST558-Project2/README.md/unnamed-chunk-19-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
 The above histogram represents the summary of the number of transactions
 of the AAPL stock. The histogram is highly skewed to the right.

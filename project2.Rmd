@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE, message = F, warning = F, cache = T)
 ```
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.path = "ST558-Project2/README.md/")
+knitr::opts_chunk$set(path = "ST558-Project2/README.md/")
 
 ```
 
