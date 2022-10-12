@@ -1,5 +1,5 @@
 ---
-title: "Project2"
+title: "project2"
 author: "Ruben Sowah"
 date: "2022-10-09"
 output: 
@@ -11,13 +11,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F, cache = T)
 ```
 
-```{r, echo=FALSE}
-knitr::opts_chunk$set(path = "ST558-Project2/README.md/")
 
-```
 
 ```{r, echo = F, eval = F}
-rmarkdown::render("Project2.Rmd",
+rmarkdown::render("project2 rmd.Rmd",
                   output_format = "github_document",
                   output_file = "README.md",
                   output_options = list(

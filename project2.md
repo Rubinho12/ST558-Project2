@@ -1,4 +1,4 @@
-Project2
+project2
 ================
 Ruben Sowah
 2022-10-09
@@ -136,16 +136,16 @@ stock_grouped(date = '2021-10-01',adjusted = 'false',include_otc = 'false')
     ## # A tibble: 10,766 x 9
     ##    T           v     vw      o      c      h      l             t     n
     ##    <chr>   <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>         <dbl> <int>
-    ##  1 MCEF     8052  20.7   20.7   20.8   20.9   20.7  1633118400000    33
-    ##  2 BETZ   137510  31.0   30.4   31.1   31.2   30.4  1633118400000  1169
-    ##  3 MYPS   366223   4.50   4.56   4.45   4.65   4.4  1633118400000  2552
-    ##  4 GSpK    31102  28.2   28.2   28.2   28.4   28.1  1633118400000   253
-    ##  5 SDOG    50169  51.7   51.4   51.9   52.2   51.1  1633118400000   317
-    ##  6 HCII    15409   9.76   9.78   9.75   9.78   9.74 1633118400000    39
-    ##  7 TIL    473989  18.8   18.0   19.1   19.2   17.5  1633118400000  5083
-    ##  8 MAA    372343 189.   188.   189.   190.   185.   1633118400000 10163
-    ##  9 DNA   9818501  11.4   11.7   11.5   11.7   11.2  1633118400000 37618
-    ## 10 ENNV    49835   9.91   9.92   9.9    9.93   9.84 1633118400000    88
+    ##  1 TIL    473989  18.8   18.0   19.1   19.2   17.5  1633118400000  5083
+    ##  2 MCEF     8052  20.7   20.7   20.8   20.9   20.7  1633118400000    33
+    ##  3 SDOG    50169  51.7   51.4   51.9   52.2   51.1  1633118400000   317
+    ##  4 HCII    15409   9.76   9.78   9.75   9.78   9.74 1633118400000    39
+    ##  5 MAA    372343 189.   188.   189.   190.   185.   1633118400000 10163
+    ##  6 ENNV    49835   9.91   9.92   9.9    9.93   9.84 1633118400000    88
+    ##  7 MF     246688   4.17   4.38   4.18   4.46   4.05 1633118400000  1012
+    ##  8 IMCB    12457  67.1   66.7   67.3   67.5   66.3  1633118400000   177
+    ##  9 BETZ   137510  31.0   30.4   31.1   31.2   30.4  1633118400000  1169
+    ## 10 CHWY  1735795  67.2   68     67.4   68     66.1  1633118400000 25073
     ## # ... with 10,756 more rows
 
 -   **crypto_grouped**
@@ -488,7 +488,7 @@ g + geom_point(aes(fill = avgPrice), color = 'red') +
       labs(title = 'Volume vs Number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 -   **Graphical summary of different type of transactions, categorized
     by the level price of the stocks**
@@ -501,7 +501,7 @@ g + geom_bar(aes(fill = priceLevel), position = 'dodge')+
   facet_wrap (~priceLevel, labeller = label_both)
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 The above plot is a bar plot, used to summarize categorical variables.
 We summarized the type of AAPL stock transactions ranging from low
@@ -524,7 +524,7 @@ g + geom_bar(aes(fill = priceLevel ), position = 'dodge')+
   coord_flip()
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 -   **Boxplot of the transaction variable for each level of th e
     transaction type**
@@ -544,7 +544,7 @@ g + geom_boxplot()+
   labs(title = 'Boxplot for the number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 -   **Histogram of the number of AAPL transactions**
 
@@ -554,7 +554,7 @@ g + geom_histogram(bins = 20, fill = 'blue', color = 5)+
    labs(title = 'Histogram of the number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
 The above histogram represents the summary of the number of transactions
 of the AAPL stock. The histogram is highly skewed to the right.
