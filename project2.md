@@ -1,4 +1,4 @@
-ST558\~Project2
+Project2
 ================
 Ruben Sowah
 2022-10-09
