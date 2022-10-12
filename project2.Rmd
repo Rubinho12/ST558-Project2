@@ -21,6 +21,11 @@ rmarkdown::render("project2 rmd.Rmd",
                     html_preview = FALSE, toc = TRUE, toc_depth = 2, toc_float = TRUE)
 )
 ```
+
+```{r, echo=FALSE}
+#knitr::opts_chunk$set(fig.path = "README.md")
+
+```
 # Goal 
   Our goal is to create a vignette, which can be thought of as a long-form guide or a small illustrative sketch. Vignettes are explanations of concepts packages, etc with code and output inter-weaved. 
   

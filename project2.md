@@ -488,7 +488,7 @@ g + geom_point(aes(fill = avgPrice), color = 'red') +
       labs(title = 'Volume vs Number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 -   **Graphical summary of different type of transactions, categorized
     by the level price of the stocks**
@@ -501,7 +501,7 @@ g + geom_bar(aes(fill = priceLevel), position = 'dodge')+
   facet_wrap (~priceLevel, labeller = label_both)
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 The above plot is a bar plot, used to summarize categorical variables.
 We summarized the type of AAPL stock transactions ranging from low
@@ -524,7 +524,7 @@ g + geom_bar(aes(fill = priceLevel ), position = 'dodge')+
   coord_flip()
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 -   **Boxplot of the transaction variable for each level of th e
     transaction type**
@@ -544,7 +544,7 @@ g + geom_boxplot()+
   labs(title = 'Boxplot for the number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
 -   **Histogram of the number of AAPL transactions**
 
@@ -554,7 +554,7 @@ g + geom_histogram(bins = 20, fill = 'blue', color = 5)+
    labs(title = 'Histogram of the number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
 The above histogram represents the summary of the number of transactions
 of the AAPL stock. The histogram is highly skewed to the right.
