@@ -12,15 +12,6 @@ Ruben Sowah
     Exploration</a>
 -   <a href="#wrap-up" id="toc-wrap-up">Wrap-Up</a>
 
-``` r
-rmarkdown::render("ST558-Project2 rmd.Rmd",
-                  output_format = "github_document",
-                  output_file = "README.md",
-                  output_options = list(
-                    html_preview = FALSE, toc = TRUE, toc_depth = 2, toc_float = TRUE)
-)
-```
-
 # Goal
 
 Our goal is to create a vignette, which can be thought of as a long-form

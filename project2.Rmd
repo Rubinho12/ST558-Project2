@@ -11,8 +11,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F, cache = T)
 ```
 
-```{r, echo = T, eval = F}
-rmarkdown::render("ST558-Project2 rmd.Rmd",
+```{r, echo = F, eval = F}
+rmarkdown::render("Project2.Rmd",
                   output_format = "github_document",
                   output_file = "README.md",
                   output_options = list(
