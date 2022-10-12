@@ -1,4 +1,4 @@
-rmarkdown::render("ST558-Project2 rmd.Rmd",
+rmarkdown::render("project2 rmd.Rmd",
                   output_format = "github_document",
                   output_file = "README.md",
                   output_options = list(
