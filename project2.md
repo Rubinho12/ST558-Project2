@@ -439,7 +439,7 @@ summary1 <- mydata %>%
     ##   transType average Voldeviation
     ##   <fct>       <dbl>        <dbl>
     ## 1 high        124.     56732637.
-    ## 2 low          83.2     1522973.
+    ## 2 low          83.2     1521329.
     ## 3 moderate     80.0    10749988.
 
 ``` r
@@ -451,7 +451,7 @@ summary2 <- mydata %>%
     ## # A tibble: 2 x 4
     ##   priceLevel averageVol  medVol OPricevariance
     ##   <fct>           <dbl>   <dbl>          <dbl>
-    ## 1 cheap         698112.  51354.           482.
+    ## 1 cheap         697464.  51354.           482.
     ## 2 expensive    1229650. 251846.     202168808.
 
 ``` r
@@ -488,7 +488,7 @@ g + geom_point(aes(fill = avgPrice), color = 'red') +
       labs(title = 'Volume vs Number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 -   **Graphical summary of different type of transactions, categorized
     by the level price of the stocks**
@@ -501,7 +501,7 @@ g + geom_bar(aes(fill = priceLevel), position = 'dodge')+
   facet_wrap (~priceLevel, labeller = label_both)
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 The above plot is a bar plot, used to summarize categorical variables.
 We summarized the type of AAPL stock transactions ranging from low
@@ -524,7 +524,7 @@ g + geom_bar(aes(fill = priceLevel ), position = 'dodge')+
   coord_flip()
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 -   **Boxplot of the transaction variable for each level of th e
     transaction type**
@@ -544,7 +544,7 @@ g + geom_boxplot()+
   labs(title = 'Boxplot for the number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 -   **Histogram of the number of AAPL transactions**
 
@@ -554,7 +554,7 @@ g + geom_histogram(bins = 20, fill = 'blue', color = 5)+
    labs(title = 'Histogram of the number of transactions')
 ```
 
-![](project2_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](project2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
 The above histogram represents the summary of the number of transactions
 of the AAPL stock. The histogram is highly skewed to the right.
