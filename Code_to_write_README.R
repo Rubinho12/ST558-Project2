@@ -1,4 +1,4 @@
-rmarkdown::render("project2 rmd.Rmd",
+rmarkdown::render("project2.Rmd",
                   output_format = "github_document",
                   output_file = "README.md",
                   output_options = list(
